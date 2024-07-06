@@ -1,0 +1,95 @@
+/* ----------------- FONT-FAMILY (IMPORT) ----------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ----------------- (ROOT) ----------------- */
+
+:root {
+    --MAIN-COLOR-1: #ffffff;
+    --MAIN-COLOR-2: #000000;
+}
+
+
+/* ----------------- BODY - (index.html) ----------------- */
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    color: var(--MAIN-COLOR-1);
+    text-align: center;
+    background-color: #660303;
+}
+
+a {
+    text-decoration: none;
+    color: var(--MAIN-COLOR-1);
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.box {
+    cursor: pointer;
+    width: 500px;
+    margin-bottom: 50px;
+    border-style: solid;
+    border-color: var(--MAIN-COLOR-1);
+}
+
+/* ----------------- COUNTDOWN CLOCK - (page-1.html) ----------------- */
+
+#time {
+    font-size: 45px;
+    width: 500px;
+    margin: 0 auto;
+    width: 50%;
+    border: 2px solid var(--MAIN-COLOR-1);
+    border-radius: 20px;
+}
+
+/* ----------------- ANALOG CLOCK - (page-2.html) ----------------- */
+
+#clockContainer {
+    position: relative;
+    margin: auto;
+    height: 40vw;
+    width: 40vw;
+    background: url(clock.png) no-repeat;
+    background-size: 100%;
+}
+ 
+#hour,
+#minute,
+#second {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+ 
+#hour {
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;
+}
+ 
+#minute {
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;
+}
+ 
+#second {
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8;
+}
