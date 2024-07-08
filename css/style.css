@@ -57,7 +57,7 @@ a {
     margin: auto;
     height: 40vw;
     width: 40vw;
-    background: url(clock.png) no-repeat;
+    background: url(../images/clock.png) no-repeat;
     background-size: 100%;
 }
  
@@ -65,7 +65,7 @@ a {
 #minute,
 #second {
     position: absolute;
-    background: black;
+    background: var(--MAIN-COLOR-1);
     border-radius: 10px;
     transform-origin: bottom;
 }
@@ -93,3 +93,16 @@ a {
     left: 49.25%;
     opacity: 0.8;
 }
+
+/* ----------------- DIGITAL CLOCK - (page-3.html) ----------------- */
+
+#clock {
+    font-size: 100px;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    border: 2px solid var(--MAIN-COLOR-1);
+    border-radius: 20px;
+}
+
+/* ----------------------------------------------------------------- */

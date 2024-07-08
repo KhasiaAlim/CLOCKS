@@ -1,6 +1,6 @@
 // ----- //
 
-let countdown1 = new Date("1 Aug, 2024 00:00:00");
+let countdown1 = new Date("1 Jan, 2025 00:00:00");
 let countdown2 = countdown1.getTime();
 const interval = 1000;
 
